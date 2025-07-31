@@ -1,0 +1,93 @@
+body {
+  font-family: 'Segoe UI', 'PingFang SC', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  min-width: 320px;
+  position: relative;
+}
+
+/* 半透明大图标右上角 */
+body::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 120px;
+  height: 120px;
+  background: url('icons/icon128.png') no-repeat right top;
+  background-size: contain;
+  opacity: 0.68;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 18px 16px 14px 16px;
+}
+.container {
+  padding: 18px 16px 14px 16px;
+}
+h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+label {
+  font-size: 0.98em;
+  color: #555;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 7px 8px;
+  margin: 8px 0 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+/* 让 label 右对齐，时间和按钮左对齐 */
+.result-group > div, .current-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.result-group > div > span:first-child {
+  min-width: 70px;
+  text-align: right;
+  display: inline-block;
+  color: #666;
+}
+
+.result-group span, .current-group span {
+  margin-right: 6px;
+  font-size: 1em;
+}
+
+/* 本地时间、UTC时间、当前时间戳均为等宽字体 */
+/* 本地时间、UTC时间、当前时间戳均为等宽字体，字号略大 */
+#local-time, #utc-time, #current-timestamp {
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', 'Courier New', monospace;
+  font-size: 1.08em;
+}
+button {
+  margin-left: 8px;
+  padding: 2px 10px;
+  font-size: 0.95em;
+  border: none;
+  border-radius: 3px;
+  background: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #388e3c;
+}
+hr {
+  margin: 14px 0 10px 0;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+}

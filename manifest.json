@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "时间戳转换工具",
+  "version": "1.0.0",
+  "description": "输入时间戳，自动展示本地时间和UTC时间，并支持一键复制。支持查看当前时间毫秒时间戳。",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": []
+}

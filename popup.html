@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时间戳转换工具</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>时间戳转换工具</h2>
+        <label for="timestamp-input">输入时间戳：</label>
+        <input id="timestamp-input" type="text" placeholder="秒或毫秒时间戳" autocomplete="off" />
+        <div class="result-group">
+            <div>
+                <span>UTC 时间：</span>
+                <span id="utc-time"></span>
+                <button id="copy-utc">复制</button>
+            </div>
+            <div>
+                <span>本地时间：</span>
+                <span id="local-time"></span>
+                <button id="copy-local">复制</button>
+            </div>
+        </div>
+        <hr />
+        <div class="current-group">
+            <span>当前毫秒时间戳：</span>
+            <span id="current-timestamp"></span>
+            <button id="copy-current">复制</button>
+        </div>
+    </div>
+
+    <script type="module" src="popup.js"></script>
+</body>
+
+</html>
