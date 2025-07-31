@@ -2,6 +2,8 @@
 
 一个简洁实用的 Chrome 浏览器扩展，支持时间戳与本地/UTC时间的自动转换，支持一键复制，支持查看当前时间毫秒时间戳。
 
+<img width="668" height="496" alt="image" src="https://github.com/user-attachments/assets/724b5f6d-6cec-4cbd-bcce-6cc2c1504987" />
+
 ## 功能特性
 
 - 输入时间戳（支持秒级和毫秒级，自动识别），自动展示对应的本地时间和 UTC 时间（格式：YYYY-MM-DD HH:mm:ss）。
